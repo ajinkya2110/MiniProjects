@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Quiz App</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="box">
+            <h2>Score→<span id="score">0</span></h2>
+            <h3 id="question">Q. 8 * 4</h3>
+        <form id="questionForm" onsubmit="checkAnswer(event)">
+            <input required id="answer" name="answer" type="number" step="any">
+            <button class="primary-btn" type="submit">Submit</button>
+        </form>
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
