@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />  
+    <link rel="stylesheet" href="style.css">
+
+
+<style>
+#cartContainer{
+overflow-x: auto;
+}
+  #cartContainer table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap;
+  }
+  #cartContainer table thead{
+    font-weight: 700;
+  }
+  #cartContainer table thead td{
+    background-color: coral;
+    color: white;
+    border: none;
+    padding: 6px 0;
+  }
+  #cartContainer table td{
+    border: 1px solid #b6b3b3; 
+    text-align: center;
+  }
+  #cartContainer table td:nth-child(1){
+    width: 100px;
+  }
+  #cartContainer table td:nth-child(2)
+  {
+    width: 300px;
+  }
+  #cartContainer table td:nth-child(3){
+    width: 200px;
+  }
+  #cartContainer table td:nth-child(4){
+    width: 150px;
+  }
+  #cartContainer table td:nth-child(5){
+    width: 160px;
+  }
+  #cartContainer table td:nth-child(6){
+    width: 160px;
+  }
+  #cartContainer table tbody img{
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+  }
+  #cartContainer table tbody i{
+    color: #8d8c89;
+  }
+
+  #cartBottom .coupon>div,
+  #cartBottom .total>div{
+    border: 1px solid #b6b3b3;
+  }
+  #cartBottom .coupon h5,
+  #cartBottom .total h5{
+    background-color: coral;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-weight: 700;
+  }
+  #cartBottom .coupon p,
+  #cartBottom .coupon input {
+    padding: 0 12px;
+  }
+  #cartBottom .coupon input{
+    height: 44px;
+    margin: 0 0 20px 12px;
+  }
+  #cartBottom .coupon button{
+    margin: 0 0 20px 12px;
+  }
+  #cartBottom .total div>div{
+    padding: 0 12px;
+  }
+  #cartBottom .total h6{
+    color: #2a2a2a;
+  }
+  .secondhr{
+    background: #b8b7b3;
+    width: 100px;
+    height: 1px;
+  }
+  #cartBottom .total div>button{
+    margin: 0 12px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+
+
+
+  
+  
+</style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <div class="container">
+          <img src="images/logo1.png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i id="bar" class="fas fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="shop.html">SHOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="search.html"><i class="fal fa-search"></i></a>
+              </li>
+                <li>
+                <a class="nav-link active" href="cart.html"><i class="fal fa-shopping-bag"></i></a>
+              </li>
+          </div>
+        </div>
+      </nav>
+
+
+      <section id="blogHome" class="pt-5 mt-5 container">
+            <h2 class="font-weight-bold pt-5">Shopping Cart</h2>
+            <hr>
+        </section>
+
+
+      <section id="cartContainer" class="container my-5">
+        <table width="100%">
+          <thead>
+            <tr>
+              <td>Remove</td>
+              <td>image</td>
+              <td>Product</td>
+              <td>Price</td>
+              <td>Quantity</td>
+              <td>Total</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+              <td><img src="images/shoes/1 (1).jpg" alt=""></td>
+              <td><h5>Casual Shoes</h5></td>
+              <td>$65</td>
+              <td><input class="w-25 px-2 py-2" type="number" value="1"></td>
+              <td><h5>$65</h5></td>
+            </tr>
+            <tr>
+              <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+              <td><img src="images/shoes/2.jpg" alt=""></td>
+              <td><h5>Casual Shoes</h5></td>
+              <td>$65</td>
+              <td><input class="w-25 px-2 py-2" type="number" value="1"></td>
+              <td><h5>$65</h5></td>
+            </tr>
+            <tr>
+              <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+              <td><img src="images/shoes/3.jpg" alt=""></td>
+              <td><h5>Casual Shoes</h5></td>
+              <td>$65</td>
+              <td><input class="w-25 px-2 py-2" type="number" value="1"></td>
+              <td><h5>$65</h5></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+
+      <section id="cartBottom" class="container">
+        <div class="row">
+
+          <div class="coupon col-lg-6 col-md-6 col-12 mb-4">
+            <div>
+              <h5>COUPON</h5>
+              <p>Enter your coupon code if you have one.</p>
+              <input type="text" placeholder="Coupon Code">
+              <button>APPLY COUPON</button>
+            </div>
+          </div>
+
+        <div class="total col-lg-6 col-md-6 col-12">
+            <div>
+              <h5>CART TOTAL</h5>
+
+            <div class="d-flex justify-content-between">
+              <h6>SUBTOTAL</h6>
+              <P>$195</P>
+            </div>
+            <div class="d-flex justify-content-between">
+              <h6>SHIPPING</h6>
+              <P>$20</P>
+            </div>
+            <hr class="secondhr">
+            <div class="d-flex justify-content-between">
+               <h6>TOTAL</h6>
+              <P>$215</P>
+            </div>
+            <button class="mx-auto">PROCEED TO CHECKOUT</button>
+          </div>
+        </div>
+        </div>
+      </section>
+
+
+        
+
+
+      <footer class="mt-5 py-5">
+        <div class="row container mx-auto">
+            <div class="footerOne col-lg-3 col-md-6 col-12">
+                <img src="images/logo2.png" alt="">
+                <p class="pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia numquam consequuntur neque ipsam tenetur necessitatibus alias!</p>
+            </div>
+            <div class="footerOne col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="#">men</a></li>
+                    <li><a href="#">women</a></li>
+                    <li><a href="#">boys</a></li>
+                    <li><a href="#">girls</a></li>
+                    <li><a href="#">new arrivals</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">clothes</a></li>
+                    <li><a href="#">watches</a></li>
+                </ul>
+            </div>
+            <div class="footerOne col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Contact Us</h5>
+                <div class>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>123 STREET NAME, CITY, US</p>
+                </div>
+                <div class>
+                    <h6 class="text-uppercase">PHONE</h6>
+                    <p>(123) 456-7890</p>
+                </div>
+                <div class>
+                    <h6 class="text-uppercase">EMAIL</h6>
+                    <p>MAIL@EXAMPLE.COM</p>
+                </div>
+            </div>
+            <div class="footerOne col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Instagram</h5>
+                <div class="row">
+                    <img class="img-fluid w-25 h-100 m-2" src="images/insta/1.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="images/insta/2.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="images/insta/3.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="images/insta/4.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="images/insta/5.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="images/insta/6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="images/payment.png" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                    <p>rymo eCommerce © 2021. All Rights Reserved</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer> 
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
