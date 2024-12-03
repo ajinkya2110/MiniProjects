@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    font-family: "Oswald",sans-serif;
+}
+
+.background{
+    background-image: url("/images/mountains.jpeg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.heading h1{
+    font-size: 4rem;
+    /* letter-spacing: 08px; */
+    
+}
+
+
+.settings{
+position: absolute;
+bottom: 40px;
+right: 20px;
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.settings i{
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+
+}
+
+.settingsContent{
+    display: flex;
+    gap: 1rem;
+}
+.settingsContent input{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+} 
+
+.settingsContent button{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+
+
+.time{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.time h2{
+    text-align: center;
+    font-size:3rem;
+}
+.time div{
+ font-size:4rem;
+ color: white;
+}
