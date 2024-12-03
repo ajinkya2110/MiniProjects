@@ -1,0 +1,144 @@
+:root{
+    --primary:#419ddf;
+    --primary-light:#74b8e9;
+    --primary-dark:#166094;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; 
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+
+.container{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgba(128, 128, 128, 0.733);
+    
+}
+
+.box{
+    height: 30rem;
+    width: 40rem;
+    background: linear-gradient(178.63deg,
+    var(--primary),
+    rgba(230,191,92,0)108.92%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.upper{
+    flex-grow: 1;
+    padding: 2rem 3rem;
+}
+
+.upper h1{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+#password{
+    width: 100%;
+    height: 4rem;
+    background-color: var(--primary-light);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: rgb(206, 9, 9);
+    font-weight: 1000;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: copy;
+}
+
+.rangeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.1rem;
+}
+
+.checkboxes{
+    margin: 1rem,0;
+    display: flex;
+    flex-direction: column;
+}
+.formControl{
+    display: flex;
+    justify-content: space-between;
+}
+.formControl label { 
+    font-size: 1.6rem;
+    letter-spacing: 0.3px;
+}
+
+
+/*For all Range sliders*/
+
+
+input[type="range"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    height: 0.5rem;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    height: 2rem;
+    width: 1rem;
+    border-radius: 30%;
+    background-color: rgb(0, 0, 0);
+    
+   
+}
+
+input[type="checkbox"]{
+    accent-color: black;
+}
+
+#generateButton{
+    background-color: var(--primary-light);
+    color: white;
+    border: none;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    opacity: 0.9;
+    cursor: pointer;
+}
+#generateButton:active{
+    background-color: var(--primary-dark);
+   
+}
+
+/*Responsive*/
+
+@media(max-width:425px)
+{
+.box{
+    width: 100%;
+    height: 100vh;   
+}
+}
+
