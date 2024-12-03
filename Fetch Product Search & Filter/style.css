@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.productContainer{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.productCard{
+    box-shadow: 0px 7px 32px rgba(0,0,0,0.25);
+    width: 600px;
+    min-height: 150px;
+    border-radius: 5px;
+    display: flex;
+    
+}
+
+.productImage{
+    flex: 1;
+    border-right: 1px solid black;
+    padding: 10px 30px;
+}
+
+.productImage img{
+    width: 100%;
+    height: 100%;
+    
+    object-fit: contain;
+
+}
+
+.productContent{
+    flex: 5; 
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Product content styling */
+
+.productContent h2{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.productContent p{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.8;
+   
+}
+
+.productContent button{
+    font-size: 20px;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    margin-top: 10px;
+    background-color: #FF0D0D;
+    cursor: pointer;
+    align-self: end;
+}
+/* .productContent button:hover{
+    background-color: #230202;
+} */
+
+.productContent button:active{
+    background-color: #f56363;
+}
+
+/* Input Styling */
+
+.inputContainer{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin: 10px auto;
+}
+
+.inputContainer input{
+    width: 100%;
+    height: 35px;
+    padding-left: 40px;
+    border: 2px solid #FF0D0D;
+    color: #FF0D0D;
+}
+
+.inputContainer input::placeholder{
+    color: #FF0D0D;
+}
+
+.inputContainer input:hover{
+    outline: 1px solid #FF0D0D ;
+    border: 1px solid #FF0D0D;
+}
+
+#searchIcon{
+    position: relative;
+    left: 35px;
+    margin-left: -35px;
+    display: grid;
+    place-items: center;
+}
+
+@media(max-width:630px){
+    .productCard{
+        width: 90%;
+    }
+    .inputContainer{
+        width: 90%;
+        }
+}
+@media(max-width:425px){
+    .productCard{
+        flex-direction: column;
+    }
+    .productContent button{
+    align-self: stretch;
+    }
+}
+
+
+
+
+
+
