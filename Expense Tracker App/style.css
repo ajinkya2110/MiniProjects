@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3a3a3a;
+}
+
+.container{
+display: grid;
+place-items: center;
+height: 100vh;
+
+}
+
+.box{
+    background-color: white;
+    width: 450px;
+    height: 742px;
+    padding: 20px;
+    background-color: #302d2d;
+    color: white;
+    position: absolute;
+}
+
+p{font-size: 14px;}
+
+h1{
+    font-weight: 500;
+    font-size: 32px;
+}
+h2{
+    font-weight: 400;
+    font-size: 24px;
+}
+h3{
+    font-weight: 400;
+    font-size: 20px;
+}
+.upper,.balance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.balance{
+    margin-top: 20px;
+}
+
+.transactionContainer{
+    margin-top: 20px;
+}
+
+.transactions{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.transaction{
+    
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction .left{
+    padding: 7px;
+    flex-grow: 1;
+display: flex;
+justify-content:space-between;
+align-items: center;
+
+}
+
+.content{
+    display: flex;
+}
+.lower{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    display: none; 
+}
+.lower img{
+    height: 20px;
+}
+.showTransaction{
+     display: flex;
+}
+
+.right{
+    
+    min-height: 40px;
+    min-width: 40px;
+    display: grid;
+    place-items: center;
+    color: white;
+
+
+}
+
+.credit{
+    padding: 5px;
+    background-color: green;
+}
+.debit{
+    padding: 5px;
+    background-color: red;
+}
+
+
+.transactionForm{
+   
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    padding: 20px;
+}
+
+.transactionForm h3{
+margin-bottom: 10px;
+
+}
+
+.formControl{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.formControl:first-child{
+    flex: 2;
+}
+
+.inputs{
+    display: flex;
+    gap: 10px;
+}
+
+form input{
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    outline: 1px solid black;
+    width: 100%;
+}
+/* form input:focus-visible{
+    border: 1px solid #302d2d;
+    outline: 1px solid #302d2d;
+} */
+form input:hover{
+    border: 1px solid #302d2d;
+    outline: 1px solid #302d2d;
+}
+
+.buttonsContainer{
+    display: flex;
+     margin-top: 10px;
+}
+.buttonsContainer button{
+    width: 100%;
+ height: 45px;    
+ color: white;
+ border: none;
+ opacity: 0.9;
+ cursor: pointer;
+ transition: 0.3s ease-in-out;
+}
+.buttonsContainer button:hover{
+opacity: 1;
+transition: 0.3s ease-in-out;
+}
+
+#earningsButton{
+    background-color: green;
+}
+
+#expenseButton{
+    background-color: red;
+}
+
+
+
+/* Responsive */
+
+@media(max-width:500px){
+    .box{
+        width: 95%;
+    }
+}
