@@ -1,0 +1,438 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+#navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+#navbar #logo a img{
+    height: 90px;
+    width:60px;
+}
+#navbar #navLinks1 ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+#navbar #navLinks1 ul li{
+    margin-inline: 28px;
+    padding-top: 10px;
+    transition: 0.3s ease-in;
+}
+#navbar #navLinks1 ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+#navbar #navLinks1 ul li a:hover{
+    text-decoration: underline;
+    color: #DBA74F;
+}
+
+#navbar #navLinks2 input{
+    width: 150px;
+    height: 40px;
+    padding: 16px;
+    background-color: transparent;
+    border:none;
+    cursor:text;
+    border-radius: 10px;
+    color: white;
+    font-size: 13px;
+}
+#navbar #navLinks2 input:hover{
+    outline: 1px solid white;
+    color: #D82020;
+}
+#navbar #navLinks2 input::placeholder{
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+}
+#navbar #navLinks2 i{
+    margin-inline: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#navbar #navLinks2 i:hover{
+    transform: scale(1.2);
+    color: #DBA74F;
+}
+
+
+
+/* holiday sparkle =============================================================== */
+
+#holidaySparkleSection{
+    background-image: url(images/bg\ puma.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+
+/* Holiday Sparkle1============================================================== */
+
+/* #holidaySparkle1{
+    background-color: blue;
+    color: yellow;
+} */
+#holidaySparkle1{
+    /* background-color: purple; */
+    width: 55%;
+    display: flex;
+    text-align: center; 
+    flex-direction: column;
+}
+#holidaySparkle1 h1{
+    color: #DBA74F;
+    text-align: right;
+    font-size: 60px;
+    letter-spacing: 25px;
+    line-height: 70px;
+    margin-top:150px;
+    margin-right: 160px;
+    text-transform: uppercase;
+}
+#holidaySparkle1 h3{
+    color: #DBA74F;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+#holidaySparkle1 h3 sup{
+    font-size: 10px;
+}
+#holidaySparkle1 button{
+    width: 15%;
+    margin: 18px 0 0 42%;
+    height: 55px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 20px;
+}
+#holidaySparkle1 button:hover{
+    background-color: #DBA74F;
+}
+#holidaySparkle1 button:active{
+    transform: scale(1.05);
+}
+
+
+/* holiday special2=========================================================== */
+
+
+#holidaySparkle2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;   
+
+}
+#holidaySparkle2 h2{
+    margin: 150px 240px 0 0;
+    text-transform: capitalize;
+    color: #ffffff;
+    letter-spacing: 5px;
+
+}
+#holidaySparkle2 h5{
+    margin: 25px 240px 0 0;
+    text-transform: capitalize;
+    color: #ffffff;
+    letter-spacing: 5px;
+}
+#holidaySparkle2 #buttons{
+    margin: 35px 230px 0 0;
+}
+#holidaySparkle2 #buttons button{
+    padding: 16px;
+    margin-right: 12px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 12px;
+    text-transform:capitalize;
+}
+#holidaySparkle2 #buttons button:hover{
+    background-color: #DBA74F;
+}
+#holidaySparkle2 #buttons button:active{
+    transform: scale(1.05);
+}
+
+/* unwrapSection=============================================================== */
+
+#unwrapSection{
+    margin-block: 50px;
+    text-align: center;
+}
+#unwrapSection h2{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+}
+#unwrapSection button{
+    background-color: #3E2871;
+    padding:16px;
+    margin-inline: 16px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    border: 1px solid black;
+    outline: 1px solid black;
+    color: white;
+}
+#unwrapSection button:hover{
+    background-color: #DBA74F;
+    color: black;
+
+}
+#unwrapSection button:active{
+    transform: scale(1.1);
+}
+
+
+
+
+/* winterSection========================================================= */
+
+
+#winterSection{
+    text-align: center;
+    background-image: url(images/winter\ wear.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 35px;
+    margin-block: 50px;
+    height: 50vh;
+}
+#winterSection h2{
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 3px;
+}
+#winterSection h3{
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 40px;
+}
+#winterSection  button{
+    width: 20%;
+    margin-top:38px;
+    height: 55px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 20px;
+    text-transform:capitalize;
+    opacity: 0.9;
+    background-color: white;
+}
+
+#winterSection button:hover{
+    background-color: #3D2770;
+    color: white;
+}
+#winterSection button:active{
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+
+/* shoesSection========================================================= */
+
+#shoesSection{
+    text-align: left;
+    background-image: url(images/shoes-1042070_1280.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 35px;
+    margin-block: 80px;
+    height: 50vh;
+}
+#shoesSection h2{
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    margin-left: 100px;
+}
+#shoesSection h3{
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+#shoesSection button{
+    width: 20%;
+    margin-top:38px;
+    height: 55px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 20px;
+    text-transform:capitalize;
+    opacity: 0.9;
+    background-color: white;
+    margin-left: 40px;
+}
+
+#shoesSection button:hover{
+    background-color: #27282F;
+    color: white;
+}
+#shoesSection button:active{
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+
+/* classicsSection------------------------------------------------------------- */
+#classicsSection{
+    background-color: violet;
+    height: 100vh;
+}
+#classicsSection h3{
+    margin-left: 39%;
+    padding-top: 25px;
+    text-transform: uppercase;
+}
+#classics{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+#classicsSection #classics1{
+    background-image: url(images/palermo.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 85vh;
+    margin-top: 10px;
+}
+#classicsSection #classics2{
+    background-image: url(images/speedcat.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 85vh;
+    margin-top: 10px;
+}
+
+#classicsSection #classics3{
+    background-image: url(images/palermo.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 85vh;
+    margin-top: 10px;
+}
+#classicsSection h3{
+    text-align: left;
+    text-transform: uppercase;
+    
+}
+
+
+
+/* section Footer=============================================================== */
+#footer{
+    background-color:#181818;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#footer #footerLinks1 ul {
+    list-style: none;
+    padding-top: 25px;
+}
+#footer #footerLinks1 ul li{
+    line-height: 35px;
+    font-size: 14px;
+    
+}
+#footer #footerLinks1 ul li a{
+    text-decoration: none;
+    color: white;
+}
+#footer #footerLinks1 ul li a:hover{
+    color: #DBA74F;
+}
+
+
+
+
+
+#footer #footerLinks2 ul {
+    list-style: none;
+    padding-top: 25px;
+}
+#footer #footerLinks2 ul li{
+    line-height: 35px;
+    font-size: 14px;
+    
+}
+#footer #footerLinks2 ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+#footer #footerLinks2 ul li a:hover{
+    color: #DBA74F;
+}
+
+
+
+
+
+#footer #footerLinks3 ul {
+    list-style: none;
+    padding-top: 25px;
+}
+#footer #footerLinks3 ul li{
+    line-height: 35px;
+    font-size: 14px;
+    
+}
+#footer #footerLinks3 ul li a{
+    text-decoration: none;
+    color: white;
+}
+#footer #footerLinks3 ul li a:hover{
+    color: #DBA74F;
+}
+
+
+
+
