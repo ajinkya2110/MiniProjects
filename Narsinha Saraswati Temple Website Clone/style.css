@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Cedarville+Cursive&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yuji+Mai&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+body{
+    background-color: #EBEBEB;
+}
+.mainBox{
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 98%;
+    margin: 15px 15px 25px 15px;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+}
+.logos #nars{
+    margin-left: 20px;
+}
+
+.logos .secondLogoDiv #google{
+    margin-inline: 25px;
+    margin-top: 20px;
+}
+.logos .secondLogoDiv #google .fa-brands{
+    font-size: 50px;
+}
+.secondLogoDiv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+
+/* =================nav=================== */
+.nav{
+    height: 100px;
+    background-color: #6F3408;
+    color: white;
+    font-size: 12px;
+}
+.nav ul li .fa-solid{
+    font-size: 8px;
+}
+.nav ul{
+    padding: 15px;
+}
+.nav ul a{
+    text-decoration: none;
+    color: white;
+   
+    
+}
+.nav ul li:hover{
+    background-color: #F3791E;
+}
+.nav ul li {
+    display: inline;
+    padding: 16px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+/* .nav .navSecondRow ul li {
+    display: inline;
+    padding: 16px;
+} */
+.nav ul{
+    list-style: none;
+}
+
+
+/* =================hero=================== */
+
+.hero .line{
+    background-color: #F9F9F9;
+    padding: 10px;
+}
+.hero .line a{
+    text-decoration: none;
+    font-size: 12px;
+    padding: 6px;
+}
+.hero .line a:nth-child(1){
+    color: black;
+    margin-left: 55px;
+}
+.hero .line a:nth-child(2){
+    color: black;
+}
+.hero .line a:nth-child(3){
+    color: grey;
+    cursor:text;
+}
+.hero h1{
+    font-size: 36px;
+    font-weight: 400;
+    padding: 35px 35px 8px 35px;
+}
+.hero hr{
+    margin-inline: 34px;
+    height: 5px;
+    background-color: #ED6F1D;
+}
+.hero1{
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.hero1 #ns1{
+    margin-block: 25px;
+    border-top: 10px solid #F3F3F3;
+    border-right: 12px solid #F3F3F3;
+    border-bottom: 32px solid #F3F3F3;
+    border-left: 12px solid #F3F3F3;
+}
+.hero1 h6{
+    position: absolute;
+    bottom: 140px;
+}
+.hero1 p{
+    font-size: 13px;
+    margin-inline: 34px;
+    line-height: 25px;
+}
+
+
+.hero2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px dotted grey;
+    margin-inline: 35px;
+    margin-block: 15px;
+}
+.hero2 #krishnaRiverImage{
+    margin-block: 25px;
+    border-top: 10px solid #F3F3F3;
+    border-right: 12px solid #F3F3F3;
+    border-bottom: 32px solid #F3F3F3;
+    border-left: 12px solid #F3F3F3;
+}
+
+.hero2 #sreeGuruImage{
+    margin-block: 25px;
+    border-top: 10px solid #F3F3F3;
+    border-right: 12px solid #F3F3F3;
+    border-bottom: 32px solid #F3F3F3;
+    border-left: 12px solid #F3F3F3;
+}
+.hero2 figure{
+    position: relative;
+}
+.hero2 .figures #krishnaRiverImageCaption{
+    position: absolute;
+    bottom: 40px;
+    left: 105px;
+    font-size: 10.72px;
+}
+.hero2 .figures #sreeGuruImageCaption{
+    position: absolute;
+    bottom: 42px;
+    left: 78px;
+    font-size: 10.72px;
+}
+.hero3 p{
+    font-size: 13px;
+    margin-inline: 34px;
+    line-height: 25px;   
+}
+
+
+
+.hero4{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px dotted grey;
+    margin-inline: 35px;
+    margin-block: 15px;
+}
+.hero4 #padukaAbhishekImage{
+    margin-block: 25px;
+    border-top: 10px solid #F3F3F3;
+    border-right: 12px solid #F3F3F3;
+    border-bottom: 32px solid #F3F3F3;
+    border-left: 12px solid #F3F3F3;
+}
+
+.hero4 #padukaImage{
+    margin-block: 25px;
+    border-top: 10px solid #F3F3F3;
+    border-right: 12px solid #F3F3F3;
+    border-bottom: 32px solid #F3F3F3;
+    border-left: 12px solid #F3F3F3;
+}
+.hero4 figure{
+    position: relative;
+}
+.hero4 .figures #padukaAbhishekImageCaption{
+    position: absolute;
+    bottom: 40px;
+    left: 105px;
+    font-size: 10.72px;
+}
+.hero4 .figures #padukaImageCaption{
+    position: absolute;
+    bottom: 42px;
+    left: 141px;
+    font-size: 10.72px;
+}
+
+.hero5 p{
+    font-size: 13px;
+    margin-inline: 34px;
+    line-height: 25px;   
+}
+
+
+.hero6{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px dotted grey;
+    margin-inline: 35px;
+    margin-block: 15px;
+}
+.hero6 #oldPhotoImage{
+    margin-block: 25px;
+    border-top: 10px solid #F3F3F3;
+    border-right: 12px solid #F3F3F3;
+    border-bottom: 32px solid #F3F3F3;
+    border-left: 12px solid #F3F3F3;
+}
+
+.hero6 #treeImage{
+    margin-block: 25px;
+    border-top: 10px solid #F3F3F3;
+    border-right: 12px solid #F3F3F3;
+    border-bottom: 32px solid #F3F3F3;
+    border-left: 12px solid #F3F3F3;
+}
+.hero6 figure{
+    position: relative;
+}
+.hero6 .figures #oldPhotoImageCaption{
+    position: absolute;
+    bottom: 40px;
+    left: 53px;
+    font-size: 10px;
+    
+}
+.hero6 .figures #treeImageCaption{
+    position: absolute;
+    bottom: 32px;
+    left: 7px;
+    font-size: 10px;
+    margin-inline:20px ;
+    text-align: center;
+}
+
+.hero7 p{
+    font-size: 13px;
+    margin-inline: 34px;
+    line-height: 25px;   
+}
+
+
+.hero8{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px dotted grey;
+    margin-inline: 35px;
+    margin-block: 15px;
+}
+.hero8 #alankaraPhotoImage{
+    margin-block: 25px;
+    border-top: 10px solid #F3F3F3;
+    border-right: 12px solid #F3F3F3;
+    border-bottom: 32px solid #F3F3F3;
+    border-left: 12px solid #F3F3F3;
+}
+
+.hero8 #mainViewImage{
+    margin-block: 25px;
+    border-top: 10px solid #F3F3F3;
+    border-right: 12px solid #F3F3F3;
+    border-bottom: 32px solid #F3F3F3;
+    border-left: 12px solid #F3F3F3;
+}
+
+.hero8 #frontViewImage{
+    margin-block: 25px;
+    border-top: 10px solid #F3F3F3;
+    border-right: 12px solid #F3F3F3;
+    border-bottom: 32px solid #F3F3F3;
+    border-left: 12px solid #F3F3F3;
+}
+.hero8 figure{
+    position: relative;
+}
+.hero8 .figures #alankaraPhotoImageCaption{
+    position: absolute;
+    bottom: 40px;
+    left: 53px;
+    font-size: 10px;
+    
+}
+.hero8 .figures #mainViewImageCaption{
+    position: absolute;
+    bottom: 40px;
+    left: 76px;
+    font-size: 10px;
+    margin-inline:20px;
+    text-align: center;
+}
+.hero8 .figures #frontViewImageCaption{
+    position: absolute;
+    bottom: 40px;
+    left:70px;
+    font-size: 10px;
+    margin-inline:20px ;
+    text-align: center;
+}
+
+.hero9 p{
+    font-size: 13px;
+    margin-inline: 34px;
+    line-height: 25px;   
+}
+
+
+.hero10{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px dotted grey;
+    margin-inline: 35px;
+    margin-block: 15px;
+}
+.hero10 #adhyay20PhotoImage{
+    margin-block: 25px;
+    border-top: 10px solid #F3F3F3;
+    border-right: 12px solid #F3F3F3;
+    border-bottom: 32px solid #F3F3F3;
+    border-left: 12px solid #F3F3F3;
+}
+
+.hero10 #adhyay21PhotoImage{
+    margin-block: 25px;
+    border-top: 10px solid #F3F3F3;
+    border-right: 12px solid #F3F3F3;
+    border-bottom: 32px solid #F3F3F3;
+    border-left: 12px solid #F3F3F3;
+}
+.hero10 figure{
+    position: relative;
+}
+.hero10 .figures #adhyay20PhotoImageCaption{
+    position: absolute;
+    bottom: 35px;
+    left: 0px;
+    font-size: 9.25px;
+    margin-inline:20px ;
+    text-align: center;
+}
+.hero10 .figures #adhyay21PhotoImageCaption{
+    position: absolute;
+    bottom: 32px;
+    left: 7px;
+    font-size:10px;
+    margin-inline:20px ;
+    text-align: center;
+}
+
+
+
+/* ===============transportation============ */
+.transportation h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 30px 0 0 32px;
+    padding: 0 0 5px;
+}
+.transportation hr{
+        margin-inline: 34px;
+        height: 3px;
+        background-color: #ED6F1D;   
+}
+
+/* .modesOfTransport{
+    border: 1px dotted grey;
+    margin-inline: 35px;
+    margin-block: 25px;
+} */
+
+
+.modesOfTransport #train{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    border: 1px dotted grey;
+    margin-inline: 35px;
+    margin-block-start: 25px;
+    padding: 20px;
+}
+.modesOfTransport #train h4{
+    margin-right: 50px;
+    text-align: center;
+}
+
+.modesOfTransport #road{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    border-top: 0;
+    border-right: 1px dotted grey;
+    border-bottom: 1px dotted grey;
+    border-left: 1px dotted grey;
+    margin-inline: 35px;
+    /* margin-block: 25px; */
+    padding: 20px;
+}
+.modesOfTransport #road h4{
+    margin-right: 60px;
+    text-align: center;
+}
+.modesOfTransport #air{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    border-top: 0;
+    border-right: 1px dotted grey;
+    border-bottom: 1px dotted grey;
+    border-left: 1px dotted grey;
+    margin-inline: 35px;
+    /* margin-block: 25px; */
+    padding: 15px;
+}
+.modesOfTransport #air h4{
+    margin-right: 65px;
+    text-align: center;
+}
+
+
+/* ============Accomodaction========== */
+
+.accomodation h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 30px 0 0 32px;
+    padding: 0 0 5px;
+}
+.accomodation hr{
+        margin-inline: 34px;
+        height: 3px;
+        background-color: #ED6F1D;   
+}
+.accomodation p{
+    font-size: 13px;
+    margin-inline: 34px;
+    line-height: 25px;   
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.address h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 30px 0 0 32px;
+    padding: 0 0 5px;
+}
+.address hr{
+    margin-inline: 34px;
+    height: 3px;
+    background-color: #ED6F1D;   
+}
+.address p{
+    font-size: 13px;
+    margin-inline: 34px;
+    line-height: 25px;   
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.rituals h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 30px 0 0 32px;
+    padding: 0 0 5px;
+}
+.rituals hr{
+    margin-inline: 34px;
+    height: 3px;
+    background-color: #ED6F1D;   
+}
+.rituals p{
+    font-size: 13px;
+    margin-inline: 34px;
+    line-height: 25px;   
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+
+
+.hero11{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px dotted grey;
+    margin-inline: 35px;
+    margin-block: 15px;
+}
+.hero11 #mahapujaPhotoImage{
+    margin-block: 25px;
+    border-top: 10px solid #F3F3F3;
+    border-right: 12px solid #F3F3F3;
+    border-bottom: 32px solid #F3F3F3;
+    border-left: 12px solid #F3F3F3;
+}
+
+.hero11 #palkhiImage{
+    margin-block: 25px;
+    border-top: 10px solid #F3F3F3;
+    border-right: 12px solid #F3F3F3;
+    border-bottom: 32px solid #F3F3F3;
+    border-left: 12px solid #F3F3F3;
+}
+
+.hero11 #murtiImage{
+    margin-block: 25px;
+    border-top: 10px solid #F3F3F3;
+    border-right: 12px solid #F3F3F3;
+    border-bottom: 32px solid #F3F3F3;
+    border-left: 12px solid #F3F3F3;
+}
+.hero11 figure{
+    position: relative;
+}
+.hero11 .figures #mahapujaPhotoImageCaption{
+    position: absolute;
+    bottom: 40px;
+    left: 32px;
+    font-size: 10px;
+    
+}
+.hero11 .figures #palkhiImageCaption{
+    position: absolute;
+    bottom: 40px;
+    left: 65px;
+    font-size: 10px;
+    margin-inline:20px;
+    text-align: center;
+}
+.hero11 .figures #murtiImageCaption{
+    position: absolute;
+    bottom: 40px;
+    left:100px;
+    font-size: 10px;
+    margin-inline:20px ;
+    text-align: center;
+}
+
+.hero12 p{
+    font-size: 13px;
+    margin-inline: 34px;
+    line-height: 25px;   
+}
+
+.pujaSchedule h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 30px 0 0 32px;
+    padding: 0 0 5px;
+}
+.pujaSchedule hr{
+    margin-inline: 34px;
+    height: 3px;
+    background-color: #ED6F1D;   
+}
+.pujaSchedule ul li{
+    font-size: 13px;
+    margin-inline: 34px;
+    line-height: 25px;   
+    margin-top: 20px;
+    margin-bottom: 25px;
+    list-style: none;
+}
+.yearlyProgrammes h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 30px 0 0 32px;
+    padding: 0 0 5px;
+}
+.yearlyProgrammes hr{
+    margin-inline: 34px;
+    height: 3px;
+    background-color: #ED6F1D;   
+}
+.yearlyProgrammes p{
+    font-size: 13px;
+    margin-inline: 34px;
+    line-height: 35px;   
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.logos #digambara{
+    margin:auto;
+}
+.logos #digambara #digambaraImage{
+    width: 300px;
+    height: 22px;
+}
+.footer{
+    background-color: #2F2F2F;
+    width: 100%;
+
+}
+
+
+.footer h4{
+    font-size: 18px;
+    margin: 30px 0 0 32px;
+    padding: 0 0 5px;
+    color: #ffffff;
+}
+.footer p{
+    text-align: left;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 0 0 10px;
+    margin-inline: 34px;
+    line-height: 35px;   
+} 
+.footer a{
+    color: #bebebe;
+    font-size: 14px;
+    margin-left: 32px;
+      
+}
+.footer a:hover{
+    color: white;
+
+}
+
+
+.footerLinks{
+    background-color: #0E0E0E;
+    width: 100%;
+    position: relative;
+}
+.footerLinks .icons{
+    font-size: 23px;
+    padding:10px;
+    margin-left: 24px;
+    color: #878787;
+}
+.footerLinks .fa-brands{
+    margin-inline: 8px;
+}
+.footerLinks span{
+    color: #878787;
+    font-size:13px;
+    margin-left: 20px;
+}
+.footerLinks span a{
+    text-decoration: none;
+    color: #4bb6f5;
+    font-size: 15px;
+    
+}
+.footerLinks span a:hover{
+    text-decoration: underline;
+}
+.footerLinks #goToTop{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 50px;
+    bottom: 2px;
+    background-color: #2F2F2F;
+    padding: 7px;
+    border-radius: 8px;
+}
