@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Cedarville+Cursive&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yuji+Mai&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F5E2D4;
+}
+
+/* Top */
+
+#top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    width: 100%;
+    height: fit-content;
+    background-color: #FEEEE6;
+}
+
+#top #selectLanguages #languageDropdown{
+    border-radius: 25px;
+    padding-left: 15px;
+    border: 1px solid grey;
+    width: 220px;
+    height: 40px;
+    font-size: 13px;
+}
+#top #mainLogo #logo{
+    width: 590px;
+    height: 130px;
+}
+#top #phoneNumber .fa-phone{
+    color: #000000;
+}
+#top #phoneNumber a{
+    text-decoration: none;
+    color: #000000;
+    background-color: #F6E0CE;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 13px;
+}
+#top #socialMediaIcons .fa-brands{
+    font-size: 25px;
+    color:rgb(29, 100, 225);
+    padding: 4px;
+}
+#marQ #scrollLink{
+    font-size: 13px;
+    color: #e77205;
+}
+#marQ #scrollLink:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* =======================================navigationBar===================================== */
+#navigationBar #nav ul a{
+    text-decoration: none;
+    color: orange;
+    transition: 0.3s ease;
+    margin-inline: 15px;
+}
+#navigationBar #nav ul a:hover{
+    color: #ffffff;
+}
+
+#navigationBar #nav ul{
+    list-style: none;
+    background-color: #412236;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* ======================imagesSlideShow======================== */
+#imagesSlideshow{
+    background-color: #FEEEE6;
+    
+
+}
+#imagesSlideshow .carousel-inner .carousel-item .d-block{
+    margin: auto;
+   width: 50%;
+   height:500px;
+}
+
+/* =======================Cards======================== */
+#cardsSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ECE4DB;
+    padding-block: 25px;
+}
+#card1,#card2,#card3,#card4{
+    background-color: white;
+    width: 20%;
+    height: 33rem;
+}
+#card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.2s ease;
+}
+#card1:hover {
+    border: 1px solid black;
+}
+#cardsSection #card1 p{
+    text-align: center;
+    padding-top: 25px;
+    color: #8a132b;
+    transition: 0.3s ease;
+}
+#cardsSection #card1 p:hover{
+    color: red;
+}
+#cardsSection #card1 #todayPic{
+    width: 15rem;
+    height: 20rem;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+
+#card2{
+    display: flex;
+    flex-direction: column;
+justify-content: flex-start;
+    align-items: center;
+    transition: 0.2s ease;
+}
+#card2:hover {
+    border: 1px solid black;
+}
+#cardsSection #card2 #devi{
+    width: 230px;
+    height: 290px;
+    padding-top: 20px;    
+}
+#cardsSection #card2 h4{
+    font-size: 18px;
+    padding-block: 5px;
+    text-align: center;
+    color: #44233b;
+    transition: 0.3s ease;
+}
+#cardsSection #card2 h4:hover{
+    color: red;
+}
+#cardsSection #card2 #firstButton{
+    background-color: #449D44;
+    color: #ffffff;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+    opacity: 0.85;
+}
+#cardsSection #card2 #firstButton:hover{
+opacity: 1;
+}
+#cardsSection #card2 #secondButton{
+    background-color: #C9302C;
+    color: #ffffff;
+    width: 155px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    opacity: 0.85;
+}
+#cardsSection #card2 #secondButton:hover{
+    opacity: 1;
+}
+#cardsSection #card2 a{
+   color:  #7e4555;
+   font-size: 14px;
+   transition: 0.3s ease;
+}
+#cardsSection #card2 a:hover{
+    color: red;
+}
+
+#cardsSection #card2 #googlePlay {
+    width: 140px;
+    height: 55px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+#card3{
+    display: flex;
+    flex-direction: column;
+justify-content: flex-start;
+    align-items: center;
+    transition: 0.2s ease;
+}
+#card3:hover {
+    border: 1px solid black;
+ }
+#cardsSection #card3 #jyotiba{
+    width: 230px;
+    height: 290px;
+    padding-top: 20px;    
+}
+#cardsSection #card3 h4{
+    font-size: 18px;
+    padding-block: 5px;
+    text-align: center;
+    color: #44233b;
+    transition: 0.3s ease;
+}
+#cardsSection #card3 h4:hover{
+    color: red;
+}
+#cardsSection #card3 #firstButton{
+    background-color: #449D44;
+    color: #ffffff;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+    opacity: 0.85;
+    margin-block: 10px;
+}
+#cardsSection #card3 #firstButton:hover{
+opacity: 1;
+}
+
+#cardsSection #card3 a{
+   color:  #7e4555;
+   font-size: 14px;
+   transition: 0.3s ease;
+}
+#cardsSection #card3 a:hover{
+    color: red;
+    
+}
+
+#cardsSection #card3 #googlePlay {
+    width: 140px;
+    height: 55px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+#card4{
+    display: flex;
+    flex-direction: column;
+justify-content: flex-start;
+    align-items: center;
+    transition: 0.2s ease;
+}
+#card4:hover {
+    border: 1px solid black;
+ }
+ #card4 #tourism1{
+    margin: 15px;
+ }
+ #card4 #tourism2{
+    margin-bottom: 25px;
+ }
+
+ #card4 a{
+    color:  #7e4555;
+    font-size: 14px;
+    transition: 0.3s ease;
+    text-decoration: none;
+ }
+ #card4 a:hover{
+     color: red;
+     
+ }
+
+
+ /* =================Donation========== */
+
+ #donation{
+    background-color: #F5E2D4;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ }
+ #donation h3{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 16px;
+    color: #FD8F8F;
+    letter-spacing: 5px
+ }
+ #donation p{
+    padding-top: 40px;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    letter-spacing: 2px
+}
+#donation img{
+    width: 20%;
+    height: 50%;
+    padding-top: 15px;
+}
+#donation h2{
+    color: #DB4242;
+    font-size: 16px;
+    padding-top: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#donation button{
+    cursor: pointer;
+    margin-top: 39px;
+    background-color: #05820F;
+    color: white;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 13px;
+    letter-spacing: 1px;
+
+}
+
+
+ /* =================Schedule========== */
+#schedule{
+    /* background-color: #F5E2D4; */
+    width: 100%;
+    background-color: #F5E2D4;
+    height: 100vh;
+    display:flex;
+
+}
+
+/* #list1 {
+    position: relative;
+} */
+
+/* #schedule #schedule1 .heading{
+    text-align: right;
+    margin-bottom: 52px;
+}
+#schedule #schedule1 .heading h4{
+    font-size: 15px;
+    font-weight: 700;
+}
+#schedule #schedule1 .heading p{
+    font-size: 11px;
+}
+#schedule2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ #schedule #vertical1{
+    border-left: 1px solid orange;
+    height: 400px;
+ }
+ #schedule #vertical2{
+    border-left: 1px solid red;
+    height: 400px;
+  margin-left: 40px;
+ }
+ .dot{
+    height: 15px;
+    width: 15px;
+    background-color: orange;
+    border-radius: 50%;
+ }
+ #schedule #schedule3 h5{
+    text-align: left;
+    font-size: 13px;
+    margin-bottom: 50px;
+} */
+#table1{
+    margin: auto;
+    
+}
+#ritualsAndTimings{
+    width: 100%;
+}
+
+ table,th,tr,td{
+    border: 1px solid grey;
+}
+thead{
+    text-align: center;
+}
+thead tr th{
+    padding: 15px;
+}
+tbody{
+    text-align:center;
+}
+tbody tr td{
+    padding: 10px;
+    font-size:14px;
+}
+#schedule #table1 #ritualsAndTimings thead tr th{
+    color: #DB4242;
+}
+
+
+
+
+/* =========================news========================= */
+
+#news{
+    background-color: #49263D;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#news #newsAndUpdatesImages{
+    margin-block: 40px;
+}
+#news #newsAndUpdatesImages img{
+    width: 290px;
+    height: 270px;
+    margin: 25px;
+}
+#news #newsAndUpdatesImages img:hover{
+    transform: scale(1.5);
+}
+
+#news #newsAndUpdatesHeading{
+    margin-top: 15px;
+}
+#news #newsAndUpdatesHeading h3{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 16px;
+    color: #FD8F8F;
+    letter-spacing: 5px
+ }
+ #news #newsAndUpdatesHeading p{
+    padding-top: 40px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 2px;
+ }
+ #news #newsAndUpdatesButton button{
+    padding: 19px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    width: 200px;
+    height:60px;
+    background-color: #DB4242;
+    cursor: pointer;
+    opacity: 0.6;
+    margin-top: 15px;
+ }
+ #news #newsAndUpdatesButton button:hover{
+    color: white;
+    opacity: 1;
+ }
+
+
+ /* ===============================FormSection========================= */
+
+ #formSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5E2D4;
+ }
+ #formSection #kolhapurTourismImage{
+    display: flex;
+    margin-top: 100px;
+ }
+ #formSection #kolhapurTourismImage #image1,#image2{
+    padding: 12px;
+ }
+ #formSection #formHeading h3{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 16px;
+    color: #FD8F8F;
+    letter-spacing: 5px
+ }
+
+ #formSection #formHeading p{
+ padding-block: 40px;
+ font-size: 20px;
+ color: #000000;
+ text-align: center;
+ letter-spacing: 2px;
+ }
+ #formSection #form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ } 
+
+
+ #formSection #form #allInputs #name{
+    width: 400px;
+    padding: 6px;
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 14px;
+    border: 0;
+    outline: 0;
+    transition: 0.2s ease-in;
+ }
+ #formSection #form #allInputs #name:hover{
+    border: 2px solid #DB4242; 
+    outline: none;
+ }
+ #formSection #form #allInputs #phone{
+    width: 190px;
+    padding: 6px;
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 14px;
+    border: 0;
+    outline: 0;
+    transition: 0.2s ease-in;
+
+   
+ }
+ #formSection #form #allInputs #phone:hover{
+    border: 2px solid #DB4242; 
+    outline: none;
+ }
+ #formSection #form #allInputs #email{
+    width: 190px;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 14px;
+    border: 0;
+    outline: 0;
+    transition: 0.2s ease-in;
+ }
+ #formSection #form #allInputs #email:hover{
+    border: 2px solid #DB4242; 
+    outline: none;
+ }
+ #formSection #form #textareaBox #message{
+    width: 810px;
+    padding: 6px;
+    font-size: 14px;
+    margin-top: 20px;
+    border-radius: 14px;
+    border: 0;
+    outline: 0;
+    transition: 0.2s ease-in;
+ }
+ #formSection #form #textareaBox #message:hover{
+    border: 2px solid #DB4242; 
+    outline: none;
+ }
+
+ #formSection #form{
+    margin-bottom: 95px;
+ }
+
+
+ #formSection #form #submitButton button{
+ padding: 19px;
+ border: none;
+ outline: none;
+ border-radius: 40px;
+ width: 200px;
+ height:60px;
+ background-color: #DB4242;
+ cursor: pointer;
+ opacity: 0.6;
+ margin-top: 20px;
+ transition: 0.3s ease-in;
+}
+#formSection #form #submitButton button:hover{
+color: white;
+    opacity: 1;
+}
+
+
+
+
+
+
+/* ==========FooterLinks======== */
+#footerLinksSection{
+    background-color: #412236;
+    width: 100%;
+    height: fit-content;
+    padding-block:50px ;
+}
+#footerLinks{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+ 
+
+}
+#footerLinks #footerLinks1 ul a{
+    text-decoration: none;
+    color: orange;
+    transition: 0.3s ease;
+    margin-inline: 15px;
+}
+#footerLinks #footerLinks1 ul a:hover{
+    color: #ffffff;
+}
+
+#footerLinks #footerLinks1 ul{
+    list-style: none;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    font-size: 14px;
+}
+#footerLinks #footerLinks1 ul li{
+    padding-inline: 12px;
+}
+
+
+#footerLinks #footerImage #footerImageId{
+    width: 135px;
+    height: 95px;
+    margin-inline: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footerLinks #footerLinks2 ul a{
+    text-decoration: none;
+    color: orange;
+    transition: 0.3s ease;
+    margin-inline: 15px;
+}
+#footerLinks #footerLinks2 ul a:hover{
+    color: #ffffff;
+}
+
+
+#footerLinks #footerLinks2 ul{
+    list-style: none;
+    /* background-color: #412236; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    font-size: 14px;
+}
+#footerLinks #footerLinks2 ul li{
+    padding-inline: 12px;
+}
+
+
+#last{
+    background-color: #412236;
+    font-size: 14px;
+    padding-block: 25px;
+}
+#last p{
+    color: white;
+    text-align: center;
+}
+#last span a{
+    color: #FECC28;
+}
