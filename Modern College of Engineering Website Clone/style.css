@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Cedarville+Cursive&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yuji+Mai&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav #navLinks ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 14px;
+    
+}
+#nav #navLinks ul li{
+margin-inline: 15px;
+
+}
+
+#nav #navLinks ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    transition: 0.2s ease-in;
+}
+#nav #navLinks ul li a:hover{
+    color: #DC1D44;
+    background-color: rgb(234, 230, 230);
+
+}
+#navLinks2{
+
+    padding: 2px;
+}
+#navLinks2 ul{
+    list-style: none;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    font-size: 14px;
+}
+#navLinks2 ul li{
+    margin-inline: 15px;
+    
+}
+#navLinks2 ul li a{
+        text-decoration: none;
+        color: #000000;
+        font-weight: 600;
+        transition: 0.2s ease-in;
+}
+#navLinks2 ul li a:hover{
+        color: #DC1D44;
+        background-color: rgb(234, 230, 230);
+}
+#coursesSection h1{
+    text-align: center;
+    font-size: 32px;
+
+}
+#courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-inline: 150px;
+    margin-block: 30px;
+    
+}
+#coursesSection #courses .box{
+
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12%;
+    height:200px;
+    margin: 40px;
+    border-radius: 15px;
+    background-color: rgb(234, 230, 230);
+    cursor: pointer;
+
+}
+#coursesSection #courses .box:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 3px 4px grey;
+    border-block: 6px solid #DC1D44;
+}
+
+#courses .box #symbol img{
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+    
+}
+#courses .box h6{
+    font-size: 10px;
+
+    margin-block: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ==========================Student Chapters===================================== */
+
+
+
+#studentsChaptersSection h1{
+    text-align: center;
+    font-size: 32px;
+
+}
+#studentsChapters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-inline: 150px;
+    margin-block: 30px;
+    
+}
+#studentsChaptersSection #studentsChapters .box{
+
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12%;
+    height:200px;
+    margin: 40px;
+    border-radius: 15px;
+    background-color: rgb(234, 230, 230);
+    cursor: pointer;
+
+}
+#studentsChaptersSection #studentsChapters .box:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 3px 4px grey;
+    border-block: 6px solid #DC1D44;
+}
+
+#studentsChapters .box #symbol img{
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+    
+}
+#studentsChapters .box h6{
+    font-size: 10px;
+
+    margin-block: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* ================================PES Image================================== */
+#imageSection{
+    margin-block: 25px;
+    
+}
+
+#imageSection #pesImage img{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(135deg,rgb(89,78,255),rgb(19, 64, 148));
+}
+#imageSection #buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#imageSection #buttons #button1,#button2,#button3{ 
+    width: 30%;
+    background-color: rgb(234, 230, 230);
+    height: 200px;
+    text-align: center;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.4s ease;
+    border-radius: 15px;
+}
+#imageSection #buttons #button1 button,#button2 button,#button3 button{
+    color: black;
+    font-size: 36px;
+    font-weight: 800;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+#imageSection #buttons #button1 h6,#button2 h6,#button3 h6{
+    padding-top: 82px;
+    padding-inline: 15px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 700;
+}
+#imageSection #buttons #button1:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    border-block: 6px solid #DC1D44;
+}
+#imageSection #buttons #button2:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    border-block: 6px solid #DC1D44;
+}
+#imageSection #buttons #button3:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    border-block: 6px solid #DC1D44;
+}
+
+
+
+#infrastructureFacilitiesSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(135deg,rgb(89,78,255),rgb(19, 64, 148));
+}
+
+
+
+
+#infrastructureFacilities{
+    display: flex;
+    background-color: #202C50;
+    flex-direction: column;
+    width: 35%;
+    height: 500px;
+    margin-block: 32px;
+    padding-top:20px;
+    border-radius: 15px;   
+}
+#infrastructureFacilities:hover{
+    border: 3px solid #DC1D44;
+}
+#infrastructureFacilities #infraFaciHeading{
+    margin-inline: 25px;
+    height: 10%;
+    text-align: center;
+}
+#infrastructureFacilities #infraFaciHeading h5{
+    font-size: 22px;
+    color: white;
+
+
+}
+#infrastructureFacilities #infraFaciPara{
+    margin-left: 25px;
+    height: 30%;
+    margin-right: 05px;
+    text-align:center;
+}
+#infrastructureFacilities #infraFaciPara p{
+    font-size: 14px;
+    color: white;
+    text-align: left;
+}
+
+#infrastructureFacilities #infraFaciLinks{
+display: flex;
+
+justify-content: space-between;
+width: 100%;
+flex-wrap: wrap;
+height: 60%;
+padding: 15px;
+}
+#infrastructureFacilities #infraFaciLinks .infraFaciLinkscolumn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-inline: 39px;
+}
+
+#infrastructureFacilities #infraFaciLinks .infraFaciLinkscolumn a{
+    font-size:9px;
+    padding: 3px;
+    text-decoration: none;
+    color: #ffffff;
+}
+#infrastructureFacilities #infraFaciLinks .infraFaciLinkscolumn a:hover{
+    transform: scale(1.5);
+    background: #DC1D44;
+}
+
+
+/* ==========================Events==================================== */
+#upcomingEventsSection{
+    background:linear-gradient(135deg,rgb(89,78,255),rgb(19, 64, 148));
+}
+#upcomingEventsSection h1{
+    text-align: center;
+    padding-top: 30px;
+    color: #ffffff;
+}
+
+#upcomingEventsSection #events{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+#upcomingEventsSection #events .eventsBox{
+    width: 258px;
+    height: 470px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-block: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#upcomingEventsSection #events .eventsBox #eventsImage img{
+    width: 199px;
+    height:199px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#upcomingEventsSection #events .eventsBox #eventsInfo h6{
+    font-size: 12px;
+    padding: 10px;
+}
+
+#upcomingEventsSection #events .eventsBox #eventsInfo p{
+    font-size: 13px;
+    color: #74798c;
+    margin: 0px 0px 16px;
+    padding: 0px 0px 0px 5px;
+}
+#upcomingEventsSection #events .eventsBox #eventsInfo a{
+    color: #C7052C;
+    text-decoration: none;
+    font-size: 12px;
+    padding-left: 5px;
+}
+#upcomingEventsSection #events .eventsBox #eventsInfo a:hover{
+    text-decoration: underline;
+}
+
+
+/* ========================Photos And Videos========================================== */
+#photosVideosSection{
+    background:linear-gradient(135deg,rgb(89,78,255),rgb(19, 64, 148));
+}
+#photosVideosSection h1{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+
+
+}
+#photosVideosSection #photosVideos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 50px;
+}
+#photosVideosSection #photosVideos #photosVideos1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    margin-inline: 15px;
+}
+#photosVideosSection #photosVideos #photosVideos1a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-inline: 35px;
+}
+#photosVideosSection #photosVideos #photosVideos1a img{
+    width: 300px;
+    height: 190px;
+    margin-inline: 15px;
+    border-radius: 15px;
+
+}
+#photosVideosSection #photosVideos #photosVideos1b img{
+    width: 630px;
+    height: 300px;
+    border-radius: 15px;
+
+}
+
+#photosVideosSection #photosVideos #photosVideos2{
+
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#photosVideosSection #photosVideos #photosVideos2 img{
+    width: 430px;
+    height: 260px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+
+    border: 18px solid #202C50;
+}
+#photosVideosSection #photosVideos #photosVideos2 video{
+    width: 430px;
+    height: 260px;
+    border: 18px solid #202C50;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #aboutUsMenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+    width:max-content;
+    padding: 30px;
+    border-radius: 50px;
+    display: none;
+
+}
+#navLinks ul li:hover #aboutUsMenu{
+    display:block;
+    position: absolute;
+    font-size: 11px;
+    width:auto;
+    height:auto;
+    background-color: gray;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+#aboutUsMenu #aboutUsMenuList ul{
+    list-style: none;
+    font-weight: 500;
+   
+    margin: 60px;
+}
+#aboutUsMenu #aboutUsMenuList ul li{
+    padding: 8px;
+    font-size: 16px;
+}
+#aboutUsMenu #aboutUsMenuPara{
+    margin: 60px;
+    margin-bottom: 150px;
+   
+}
+#aboutUsMenu #aboutUsMenuPara h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#aboutUsMenu #aboutUsMenuPara p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+#aboutUsMenu #aboutUsMenuPara button{
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    width: 150px;
+    background-color: #C60028;
+    color: #ffffff;
+    cursor: pointer;
+}
+#aboutUsMenu #aboutUsMenuPara button:hover{
+    background-color: #7b0019;
+}
+#aboutUsMenu #aboutUsMenuPara button i{
+    padding: 7px;
+} */
