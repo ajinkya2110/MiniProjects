@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Cedarville+Cursive&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yuji+Mai&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+#one{
+    background-image: url(images/wallpepaer.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+
+#one #nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-inline: 50px;
+}
+#one #nav ul li{
+    margin-inline: 25px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+#one #nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+#one #nav ul li a:hover{
+    color: #DFB302;
+}
+#one #nav ul li:active{
+    transform:scale(1.1);
+    color: #DFB302;
+}
+
+
+#marQ marquee{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+
+
+/* AboutUs============================================================================ */
+
+#aboutUs{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#aboutUs #imageOfTheDay h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 35px;
+    margin-left: 80px;
+    color: #1e2022;
+}
+#aboutUs #imageOfTheDay{
+    padding-left: 10%;
+    flex-basis: 40%;
+    margin-block: 20px;
+}
+
+
+#aboutUs #imageOfTheDay img{
+    width: 80%;
+    height: 80%;
+    margin-top: 25px;
+    margin-left: 80px;
+}
+#aboutUs #aboutUsPara{
+    flex-basis: 60%;
+    margin-block: 20px;  
+}
+#aboutUs #aboutUsPara h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 35px;
+    color: #1e2022;
+}
+#aboutUs #aboutUsPara p{
+    font-size: 22px;
+    line-height: 52px;
+    color: #505050;
+    padding-right: 15%;
+}
+#aboutUs #aboutUsPara p span{
+    background-color: #b7b7b7;
+    color: #585858;
+    font-size: 30px;
+    padding: 10px 25px;
+
+}
+
+hr{
+    margin-inline: 40px;
+
+}
+
+
+
+/* Schedule========================================================================== */
+#schedules{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-block: 40px;
+
+}
+#schedule h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+}
+#dailySchedule{
+    width: 30%;
+    font-size: 20px;
+    height: 55vh;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px 10px #686a6b;
+    border-radius: 15px;
+}
+#dailySchedule h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#dailySchedule #dailyScheduleList{
+    margin-inline-start: 50px;
+    padding-top: 15px;
+    font-size: 22px;
+}
+#dailySchedule #dailyScheduleList ul{
+    line-height: 46px;
+    list-style: square;
+}
+
+#dailySchedule button{
+    margin-left: 38%;
+    margin-top: 15px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #F29819;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+#dailySchedule button:hover{
+    background-color: #c67502;
+}
+
+#upcomingSchedule{
+    width: 30%;
+    height: 55vh;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px 10px #686a6b;
+    border-radius: 15px;
+}
+#upcomingSchedule h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#upcomingSchedule #upcomingScheduleList{
+    margin-inline-start: 50px;
+    padding-top: 15px;
+    font-size: 22px;
+}
+#upcomingSchedule #upcomingScheduleList ul{
+    line-height: 52px;
+    list-style: square;
+}
+#upcomingSchedule button{
+    margin-left: 40%;
+    margin-top: 15px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #F29819;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+#upcomingSchedule button:hover{
+    background-color: #c67502;
+}
+
+
+
+
+/* socialActivities=========================================================== */
+#socialActivities{
+    margin-block: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#socialActivities #eSeva{
+    background-color: #970506;
+    height: 67vh;
+    border-radius: 15px;
+}
+#socialActivities #eSeva #activityImage img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#socialActivities #eSeva #activityInfo h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-block: 16px;
+    font-size: 26px;
+    color: white;
+}
+#socialActivities #eSeva #activityInfo button{
+    margin: 0px 0 0 35%;
+    width: 150px;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 18px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    color: #970506;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+}
+#socialActivities #eSeva #activityInfo button:hover{
+    background-color: #c4c4c5;
+}
+#socialActivities #eSeva #activityInfo button:active{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+#socialActivities #eDonation{
+    background-color: #970506;
+    height: 67vh;
+    border-radius: 15px;
+}
+#socialActivities #eDonation #activityImage img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+#socialActivities #eDonation #activityInfo h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-block: 20px;
+    font-size: 26px;
+    color: white;
+}
+#socialActivities #eDonation #activityInfo button{
+    margin: 10px 0 0 34%;
+    width: 150px;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 18px;
+    border-radius: 12px;
+    border:2px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+}
+#socialActivities #eDonation #activityInfo button:hover{
+    background-color: white;
+    color: black;
+}
+#socialActivities #eDonation #activityInfo button:active{
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+
+
+
+#socialActivities #initiatives{
+    background-color: #970506;
+    height: 67vh;
+    border-radius: 15px;
+}
+#socialActivities #initiatives #activityImage img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+#socialActivities #initiatives #activityInfo h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-block: 20px;
+    font-size: 26px;
+    color: white;
+}
+#socialActivities #initiatives #activityInfo button{
+    margin: 10px 0 0 34%;
+    width: 150px;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 18px;
+    border-radius: 12px;
+    border:2px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+}
+#socialActivities #initiatives #activityInfo button:hover{
+    background-color: white;
+    color: black;
+}
+#socialActivities #initiatives #activityInfo button:active{
+    transform: scale(1.5);
+}
+
+
+
+
+
+/* misc================================================================ */
+
+
+
+#misc{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-block: 40px;
+    margin-inline: 90px;
+}
+#misc #tatkal{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 20vh;
+    background-color: #180D5E;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+#misc #tatkal #iconAndInfo1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#misc #tatkal #iconAndInfo1 #icon1{
+    flex-basis: 20%;
+    font-size: 80px;
+    text-align: center;
+    border-top-left-radius: 15px;
+}
+#misc #tatkal #iconAndInfo1 #icon1 i{
+    color: white;
+    margin-left: 20px;
+}
+#misc #tatkal #iconAndInfo1 #miscInfo{
+    flex-basis: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 35px;
+    font-size: 20px;
+    color: white;
+    border-top-right-radius: 15px;
+}
+#misc #tatkal #btn1 button{
+    margin-left: 35%;
+    width: 30%;
+    background-color: #CC7C0C;
+    font-size:14px;
+    padding: 14px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    margin-block: 2px;
+    cursor: pointer;
+}
+#misc #tatkal #btn1 button:hover{
+    background-color: #f08e04;
+}
+
+#misc #tatkal #btn1 button:active{
+    background-color: #CC7C0C;
+}
+
+
+
+
+
+
+
+#misc #report{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 20vh;
+    background-color: #180D5E;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+#misc #report #iconAndInfo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#misc #report #iconAndInfo2 #icon2{
+    flex-basis: 20%;
+    font-size: 80px;
+    text-align: center;
+    border-top-left-radius: 15px;
+}
+#misc #report #iconAndInfo2 #icon2 i{
+    color: white;
+    margin-left: 20px;
+}
+#misc #report #iconAndInfo2 #miscInfo2{
+    flex-basis: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 35px;
+    font-size: 20px;
+    color: white;
+    border-top-right-radius: 15px;
+}
+#misc #report #btn2 button{
+    margin-left: 35%;
+    width: 30%;
+    background-color: #CC7C0C;
+    font-size:14px;
+    padding: 14px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    margin-block: 2px;
+    cursor: pointer;
+}
+#misc #report #btn2 button:hover{
+    background-color: #f08e04;
+}
+#misc #report #btn2 button:active{
+    background-color: #CC7C0C;
+}
+
+
+
+
+
+
+
+
+
+
+
+#misc #gatha{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    background-color: blue;
+}
+#misc #gatha{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 20vh;
+    background-color: #180D5E;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+#misc #gatha #iconAndInfo3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#misc #gatha #iconAndInfo3 #icon3{
+    flex-basis: 20%;
+    font-size: 80px;
+    text-align: center;
+    border-top-left-radius: 15px;
+}
+#misc #gatha #iconAndInfo3 #icon3 i{
+    color: white;
+    margin-left: 20px;
+}
+#misc #gatha #iconAndInfo3 #miscInfo3{
+    flex-basis: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 35px;
+    font-size: 20px;
+    color: white;
+    border-top-right-radius: 15px;
+}
+#misc #gatha #btn3 button{
+    margin-left: 35%;
+    width: 30%;
+    background-color: #CC7C0C;
+    font-size:14    px;
+    padding: 14px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    margin-block: 2px;
+    cursor: pointer;
+}
+#misc #gatha #btn3 button:hover{
+    background-color: #f08e04;
+}
+#misc #gatha #btn3 button:active{
+    background-color: #CC7C0C;
+}
+
+
+
+
+/* gallery============================================================== */
+
+#footer{
+    background-color: #19005B;
+    width: 100%;
+    height: 60vh;
+    margin-block: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+#footer #footer1{
+    flex-basis: 20%;
+    margin-left: 10%;
+    height: 35vh;
+    
+}
+#footer #footer1 h3{
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+#footer #footer1 p{
+    font-size: 20px;
+    line-height: 35px;
+}
+#footer #footer1 button{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding: 8px;
+    border: 2px solid white;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+
+
+
+
+#footer #footer2{
+    flex-basis: 20%;
+
+}
+#footer #footer2 h3{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+#footer #footer2 ul{
+    list-style: none;
+}
+#footer #footer2 ul li{
+    font-size: 20px;
+    line-height: 40px;
+}
+#footer #footer2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+#footer #footer2 ul li a:hover{
+    color:#CC7C0C;
+}
+
+
+
+
+
+
+
+#footer #footer3{
+    flex-basis: 20%;
+}
+#footer #footer3 h3{
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+#footer #footer3 ul{
+    list-style: none;
+}
+#footer #footer3 ul li{
+    margin-block: 50px;
+    font-size: 18px;
+    margin-left: 20px;
+    line-height: 36px;
+}
+#footer #footer3 ul li i{
+    font-size: 45px;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+
+#footer #footer4{
+    flex-basis: 20%;
+    margin-right: 10%;
+    height: 500px;
+    margin-left: 50px;
+
+}
+#footer #footer4 h3{
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+#footer #footer4 #appIcons a{
+    text-decoration: none;
+    color: white;
+}
+#footer #footer4 #appIcons a i{
+    font-size: 35px;
+    margin-right: 25px;
+}
+
+
+/* copyright section======================================================== */
+
+#copyright p{
+    text-align: center;
+    margin-block: 15px;
+    font-size: 23px;
+}
+#copyright i{
+    background-color: grey;
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-left: 97%;
+}
+#copyright a{
+    text-decoration: none;
+    color: white;
+    text-shadow: #19005B;
+    
+}
+
+
